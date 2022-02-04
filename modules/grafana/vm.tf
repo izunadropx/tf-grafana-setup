@@ -6,7 +6,7 @@ resource "proxmox_vm_qemu" "grafana" {
 
   # Cloud init options
   cicustom  = "user=IZU-HL-ISOS:snippets/${var.hostname}_user_data.yml"
-  ipconfig0 = "ip=10.0.0.210/24,gw=10.0.0.1"
+  ipconfig0 = "ip=10.0.0.40/24,gw=10.0.0.1"
   cores     = 2
   sockets   = 2
   memory    = 4096
